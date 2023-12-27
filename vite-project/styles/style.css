@@ -1,19 +1,4 @@
-html,
-body,
-*{
-    font-size: 62.5%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-};
-
-.header {
-    align-items: center;
-    text-align: center;
-    background-color: var(--primary);
-};
-
-:root{
+:root {
     --green1: #CAD2C5;
     --green2: #84A98C;
     --green3: #52796F;
@@ -25,25 +10,91 @@ body,
     --white3: #f5ebe0;
     --white4: #e3d5ca;
     --white5: #d5bdaf;
-};
 
-.theme1 {
+    /* intentions */
     --primary:var(--green1);
     --secondary:var(--green2);
-    --tetriary:var(--green3);
+    --tertiary:var(--green3);
     --quaternary:var(--green4);
-    --quinary:var(--green5)
+    --quinary:var(--green5);
+
+    /*typography*/
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem; 
+}
+
+.greentheme {
+  --primary:var(--green1);
+  --secondary:var(--green2);
+  --tertiary:var(--green3);
+  --quaternary:var(--green4);
+  --quinary:var(--green5);
 };
 
-.theme2{
-    --primary:var(--white1);
-    --secondary:var(--white2);
-    --tetriary:var(--white3);
-    --quaternary:var(--white4);
-    --quinary:var(--white5);
-};
+.whitetheme{
+  --primary:var(--white1);
+  --secondary:var(--white2);
+  --tertiary:var(--white3);
+  --quaternary:var(--white4);
+  --quinary:var(--white5);
+}
+
+.header{
+  align-items: center;
+}
+h1 {
+  font-size: var(--h1); 
+  line-height: 1.1;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+  color: var(--green5);
+}
+
+h2{
+  font-size: var(--h2);
+}
+
+h3{
+  font-size: var(--h3);
+}
+
+h4{
+  font-size: var(--h4);
+}
+
+h5{
+  font-size: var(--h5);
+}
+
+body {
+  background-color: var(--tertiary);
+  margin: 0;
+  display: flex;
+}
 
 .container{
-    align-items: center;
-};
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+}
 
+.button{
+  border-radius: 25px;
+  background-color: var(--primary);
+  padding: 20px;
+  width: 100px;
+  height: 80px;
+}
+
+.card {
+  padding: 2rem;
+  width: 200px;
+  height: 150px;
+}
