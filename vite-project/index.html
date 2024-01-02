@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API project</title>
   </head>
-  <body>
-    <div id="app">
-      <h1>genshin characters</h1>
-      <div class="container">
-        <button class="changetheme">Theme</button>
-        <button class="pyro"></button>
-        <button class="hydro"></button>
-        <button class="electro"></button>
-        <button class="cryo"></button>
-        <button class="dendro"></button>
-        <button class="anemo"></button>
-        <button class="geo"></button>
-        <div class="card"></div>
+  <body class="greenmode">
+    <div class="app">
+      <h1 class="title">Genshin Characters</h1>
+      <div class="main">
+        <form action="" id="form">
+          <label for="searchfor"> Search here</label>
+          <input type="text" name="searchfor" id="searchfor">
+          <input type="submit" value="enter">
+        </form>
+         <!-- a form collects whatever the user inputs into the blanks, has multiple ways the user can input the data (text, checkbox, submit, etc.)-->
+         <button id="changetheme"> Change Theme</button>
+         <div class="cardcontainer">
+          <!--      card should include name, description, vision, weapon, birthday, and rarity  -->
+         </div>
       </div>
     </div>
     <script type="module" src="./js/main.js"></script>

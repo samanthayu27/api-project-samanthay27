@@ -42,17 +42,17 @@
   --quinary:var(--white5);
 }
 
-.header{
-  align-items: center;
+.main{
+  color: var(--primary);
 }
-h1 {
-  font-size: var(--h1); 
-  line-height: 1.1;
-  padding: 10px;
-  margin: auto;
+
+h1,h2,h3,h4,h5{
   text-align: center;
-  border-radius: 40px;
-  color: var(--green5);
+  color: var(--tertiary);
+}
+
+h1{
+  font-size: var(--h1);
 }
 
 h2{
@@ -68,33 +68,6 @@ h4{
 }
 
 h5{
-  font-size: var(--h5);
+   font-size: var(--h5);
 }
 
-body {
-  background-color: var(--tertiary);
-  margin: 0;
-  display: flex;
-}
-
-.container{
-  background-color: var(--secondary);
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.button{
-  border-radius: 25px;
-  background-color: var(--primary);
-  padding: 20px;
-  width: 100px;
-  height: 80px;
-}
-
-.card {
-  padding: 2rem;
-  width: 200px;
-  height: 150px;
-}
