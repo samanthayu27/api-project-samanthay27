@@ -1,3 +1,8 @@
+html, 
+body{
+  box-sizing: border-box;
+  text-align: center;
+}
 :root {
     --green1: #CAD2C5;
     --green2: #84A98C;
@@ -9,7 +14,7 @@
     --white2: #d6ccc2;
     --white3: #f5ebe0;
     --white4: #e3d5ca;
-    --white5: #d5bdaf;
+    --white5: #000;
 
     /* intentions */
     --primary:var(--green1);
@@ -26,7 +31,7 @@
     --h5: 1.5rem; 
 }
 
-.greentheme {
+.greenmode {
   --primary:var(--green1);
   --secondary:var(--green2);
   --tertiary:var(--green3);
@@ -34,7 +39,7 @@
   --quinary:var(--green5);
 };
 
-.whitetheme{
+.whitemode{
   --primary:var(--white1);
   --secondary:var(--white2);
   --tertiary:var(--white3);
@@ -48,7 +53,7 @@ body{
 
 h1,h2,h3,h4,h5{
   text-align: center;
-  color: var(--tertiary);
+  color: var(--quinary);
 }
 
 h1{
@@ -71,11 +76,22 @@ h5{
    font-size: var(--h5);
 }
 
-.changetheme, .vision{
+#changetheme, .vision{
   border-radius: 12px;
   padding: 15px 32px;
   text-align: center;
   background-color: var(--secondary);
+  transition-duration: 0.4s;
+}
+
+.vision:hover, #changetheme:hover{
+  background-color: #ACBFA4;
+}
+
+.vision:active, #changetheme:active{
+  background-color: #ACBFA4;
+  box-shadow: 0 5px #666;
+  transform: translateY(-4px);
 }
 
 .title{
@@ -101,3 +117,11 @@ h5{
   height: 1000px;
   width: 400px;
 }
+
+.errorcard{
+  background-color: var(--secondary);
+  border-radius: 12px;
+  height: 600px;
+  width: 1000px;
+}
+
