@@ -64,16 +64,6 @@ function filtering() {
 getData(URL);
 filtering();
 
-DOMselectors.changetheme.addEventListener("click", function () {
-    if (document.body.classList.contains("greenmode")) {
-        document.body.classList.add("whitemode");
-        document.body.classList.remove("greenmode");
-    } else {
-        document.body.classList.add("greenmode");
-        document.body.classList.remove("whitemode");
-    }
-});
-
 
 DOMselectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -84,6 +74,8 @@ DOMselectors.form.addEventListener("submit", function (event) {
     //collects whatever the user inputted into the seach bar
     const finder = data.find((el) => el.name.toLowerCase() === lowercased);
     //searches through the data/api to match whatever was inputted into the search bar
+    clearSearch();
+    //clears the search 
 
     if (finder) {
         makeCard([finder]);
